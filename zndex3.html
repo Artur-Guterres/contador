@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova definitiva</title>
+
+    <style>
+
+body {
+
+text-align: center;
+margin-top: 150px;
+}
+ h1 {
+
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: 200px;
+ }
+button {
+
+font-size: 24px;
+font-family: fantasy;
+}
+
+
+    </style>
+</head>
+<body>
+    <section>
+<h1>0</h1>
+<button onclick="adicionar()">mais</button>
+<button onclick="zerar()">ZERAR</button>
+<button onclick="diminuir()">menos</button>
+
+
+    </section>
+    <script>
+        let numero = 0
+
+function adicionar() {
+numero ++;
+document.querySelector ('h1') . textContent = numero
+
+
+}
+
+function diminuir() {
+numero --;
+document.querySelector ('h1') . textContent = numero
+}
+
+function zerar() {
+    numero = 0
+document.querySelector ('h1') . textContent = numero
+}
+
+
+    </script>
+    
+</body>
+</html>
