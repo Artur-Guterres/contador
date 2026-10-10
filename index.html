@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            background-color: rgb(16, 168, 110);
+        }
+        h1 {
+            font-size: 64px;
+            margin-bottom: 32px;
+        }
+        button {
+            font-size: 25px;
+            padding: 5px 20px;
+            margin: 5px;
+            cursor: pointer;
+            color: black;
+            background-color: rgb(131, 15, 21)
+            
+        }
+        h1j {
+            font-size: 64px;
+            margin-bottom: 32px;
+            color: rgb(70, 8, 11);
+        }
+         
+
+    </style>
+</head>
+<body>
+    <h1j>会計士</h1j>
+    <section>
+<h1>0</h1>
+   <img src="images (1).jpeg" alt="ja era" style="float: left; margin-right: 15px;" width="300" height="300"> 
+                                   <button onclick="adicionar()">+</button>
+<button onclick="zerar()" id="zerarButton">Zerar</button>     
+<button onclick="subtrair()">-</button>         <img src="images (2).jpeg" alt="vixe trop nao abriu, ja era" style="float: right; margin-left: 15px;" width="300"; height="300">
+                                     
+
+    </section>
+
+
+    <script>
+       
+let numero = 0;
+
+function adicionar() {
+    numero++;
+    document.querySelector('h1').textContent = numero;
+}
+
+function zerar() {
+    numero = 0;
+    document.querySelector('h1').textContent = numero;
+}
+
+function subtrair() {
+    numero--;
+    document.querySelector('h1').textContent = numero;
+}
+
+    </script>
+    
+</body>
+</html>
